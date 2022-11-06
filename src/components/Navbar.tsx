@@ -1,18 +1,32 @@
-import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import Hamburger from "hamburger-react";
 
 const Navbar = () => {
+  const handleOnToggle = () => {
+    setIconIsActive((prevState) => !prevState);
+  };
+
+  const [iconIsActive, setIconIsActive] = useState(false);
+
   return (
     <>
       <nav className="navbar">
-        <h1>
-          <NavLink className="navbar-link" to="/">
-            LOGO
-          </NavLink>
-        </h1>
+        <div className="navbar-left">
+          <span>
+            <NavLink className="logo-link" to="/">
+              LOGO
+            </NavLink>
+          </span>
 
-        <ul className="navbar-list">
+          <span className="hamburger-span">
+            <Hamburger onToggle={handleOnToggle} />
+          </span>
+        </div>
+
+        {/* <div className="navbar-right"> */}
+        <ul className={iconIsActive ? "navbar-list showed" : "navbar-list"}>
           <li>
             <NavLink className="navbar-link" to="/about">
               O nas
@@ -39,6 +53,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+        {/* </div> */}
       </nav>
       <div className="navbar-separator"></div>
     </>
