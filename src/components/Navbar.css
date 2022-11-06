@@ -1,0 +1,30 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    color: white;
+}
+
+.navbar-separator{
+    margin-top: var(--navbar-height);
+}
