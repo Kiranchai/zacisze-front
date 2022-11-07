@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zacisze-front/static/css/main.311251c5.css",
+    "main.js": "/zacisze-front/static/js/main.e572dc84.js",
+    "index.html": "/zacisze-front/index.html",
+    "main.311251c5.css.map": "/zacisze-front/static/css/main.311251c5.css.map",
+    "main.e572dc84.js.map": "/zacisze-front/static/js/main.e572dc84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.311251c5.css",
+    "static/js/main.e572dc84.js"
+  ]
+}
