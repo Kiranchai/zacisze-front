@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 :root{
-  --navbar-height: 3.5rem
+  --navbar-height: 3.5rem;
+  --font-standard: 'Lato', sans-serif;
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-standard);
 }
 
 body {
