@@ -7,7 +7,8 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import News from "./pages/News";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
+import Room from "./pages/Room/Room";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/rooms/:id" element={<Room />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

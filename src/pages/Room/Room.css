@@ -1,0 +1,23 @@
+.room-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.room-content{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.room-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
