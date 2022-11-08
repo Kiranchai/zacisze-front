@@ -1,6 +1,5 @@
 .slider-container{
     max-width: 50rem;
-    margin: 1rem;
     position: relative;
     aspect-ratio: 16/9;
     background-color: darkgray;
@@ -16,6 +15,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
+    transition: all .2s ease-in-out;
 }
 
 .slider-btn{
@@ -45,3 +45,11 @@
 .right{
     right: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .slider-btn{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 1.5rem;
+    }
+  }

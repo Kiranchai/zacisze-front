@@ -1,4 +1,4 @@
-import { ReactEventHandler, useState } from "react";
+import { useState } from "react";
 import "./Slider.css";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
