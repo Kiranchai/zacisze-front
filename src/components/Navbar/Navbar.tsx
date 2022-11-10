@@ -52,7 +52,6 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        {/* </div> */}
       </nav>
       <div className="navbar-separator"></div>
 

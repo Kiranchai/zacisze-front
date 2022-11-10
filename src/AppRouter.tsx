@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import Aside from "./components/Aside/Aside";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -9,6 +10,7 @@ import News from "./pages/News/News";
 import NotFound from "./pages/NotFound/NotFound";
 import Room from "./pages/Room/Room";
 import Rooms from "./pages/Rooms/Rooms";
+import DashRooms from "./pages/Dashboard/Rooms/Rooms";
 
 const AppRouter = () => {
   return (
@@ -24,7 +26,10 @@ const AppRouter = () => {
           <Route path="/rooms/:id" element={<Room />} />
           <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route element={<Aside />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/rooms" element={<DashRooms />} />
+        </Route>
       </Routes>
     </>
   );
