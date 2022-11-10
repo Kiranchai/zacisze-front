@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import App from "./App";
+import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Dashboard from "./pages/Dashboard/Dashboard";
@@ -14,14 +14,16 @@ const AppRouter = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<App Children={Home} />} />
-        <Route path="/about" element={<App Children={About} />} />
-        <Route path="/news" element={<App Children={News} />} />
-        <Route path="/rooms" element={<App Children={Rooms} />} />
-        <Route path="/contact" element={<App Children={Contact} />} />
-        <Route path="/login" element={<App Children={Login} />} />
-        <Route path="/rooms/:id" element={<App Children={Room} />} />
-        <Route path="*" element={<App Children={NotFound} />} />
+        <Route element={<Navbar />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/rooms" element={<Rooms />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/rooms/:id" element={<Room />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>

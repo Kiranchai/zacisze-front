@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./Navbar.css";
 import Hamburger from "hamburger-react";
 
@@ -25,7 +25,6 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* <div className="navbar-right"> */}
         <ul className={iconIsActive ? "navbar-list showed" : "navbar-list"}>
           <li>
             <NavLink className="navbar-link" to="/about">
@@ -56,6 +55,8 @@ const Navbar = () => {
         {/* </div> */}
       </nav>
       <div className="navbar-separator"></div>
+
+      <Outlet />
     </>
   );
 };
