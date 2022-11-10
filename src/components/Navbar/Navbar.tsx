@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink className="navbar-link" to="/news">
-              Nowości
+              Aktualności
             </NavLink>
           </li>
           <li>

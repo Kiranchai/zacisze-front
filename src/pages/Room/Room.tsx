@@ -6,6 +6,7 @@ const Room = () => {
   return (
     <section className="room-container">
       <h2 className="room-name-header">Pokój Victoria</h2>
+
       <div className="room-content">
         <Slider />
       </div>
