@@ -1,16 +1,29 @@
 import React from "react";
+import "./Rooms.css";
+import { AiFillEdit } from "react-icons/ai";
 
 const Rooms = () => {
   return (
-    <div>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit officiis
-      non autem dicta consectetur iusto exercitationem molestiae recusandae
-      cupiditate quam quia ab possimus perferendis omnis odio minus quaerat,
-      commodi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Dignissimos fugiat voluptatibus cum odit ratione perspiciatis eius
-      cupiditate officia earum odio, pariatur ipsam sunt repellendus voluptas
-      consequatur ad unde. Eum, et?
-    </div>
+    <main className="dashboard-rooms-main">
+      <h1 className="dashboard-rooms-header">Pokoje</h1>
+
+      <section>
+        <ul className="dashboard-rooms-list">
+          <li className="dashboard-rooms-list-item">
+            <div className="rooms-list-left">
+              <h3>Victoria</h3>
+              <span className="dashboard-rooms-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, perferendis.
+              </span>
+            </div>
+            <div className="room-list-right">
+              <AiFillEdit />
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
   );
 };
 

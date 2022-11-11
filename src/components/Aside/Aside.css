@@ -13,7 +13,6 @@
 .aside-separator{
     margin-left: var(--aside-width);
     height: 100vh;
-    float: left;
     transition: all .4s ease-in-out;
 }
 
@@ -47,6 +46,11 @@
     width: 100%;
 }
 
+.aside-navlink.active > .aside-option-link{
+    color: rgb(0, 159, 252);
+    text-shadow: 1px 1px black;
+}
+
 .aside-nav{
     height: var(--navbar-height);
     background-color: #1C4E80;
@@ -76,6 +80,8 @@
     display: none;
 }
 
+
+
 @media only screen and (max-width: 600px) {
     .aside-container{
         transform: translate(calc(var(--aside-width) * -1));
@@ -97,7 +103,5 @@
     .shown{
         transform: translateX(calc(var(--aside-width) - var(--aside-width)));
     }
-    
-
     
 }

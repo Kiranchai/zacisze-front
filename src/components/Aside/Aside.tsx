@@ -19,29 +19,53 @@ const Aside = () => {
       </nav>
       <div className="aside-nav-separator" />
 
-      <aside
-        className={asideShown ? "aside-container shown" : "aside-container"}
-      >
-        <nav>
-          <header className="aside-welcome-header">
-            Zalogowano jako Karol
-          </header>
-          <ul className="aside-option-list">
-            <NavLink
-              className="aside-navlink"
-              to="/dashboard/rooms"
-              onClick={showAside}
-            >
-              <li className="aside-option-link">Pokoje</li>
-            </NavLink>
+      <div style={{ display: "flex" }}>
+        <aside
+          className={asideShown ? "aside-container shown" : "aside-container"}
+        >
+          <nav>
+            <header className="aside-welcome-header">
+              Zalogowano jako Karol
+            </header>
+            <ul className="aside-option-list">
+              <NavLink
+                className="aside-navlink"
+                to="/dashboard/"
+                onClick={showAside}
+              >
+                <li className="aside-option-link">Panel główny</li>
+              </NavLink>
 
-            <li className="aside-option-link">Rezerwacje</li>
-            <li className="aside-option-link">Aktualności</li>
-          </ul>
-        </nav>
-      </aside>
-      <div className="aside-separator"></div>
-      <Outlet />
+              <NavLink
+                className="aside-navlink"
+                to="/dashboard/rooms"
+                onClick={showAside}
+              >
+                <li className="aside-option-link">Pokoje</li>
+              </NavLink>
+
+              <NavLink
+                className="aside-navlink"
+                to="/dashboard/reservations"
+                onClick={showAside}
+              >
+                <li className="aside-option-link">Rezerwacje</li>
+              </NavLink>
+
+              <NavLink
+                className="aside-navlink"
+                to="/dashboard/news"
+                onClick={showAside}
+              >
+                <li className="aside-option-link">Aktualności</li>
+              </NavLink>
+            </ul>
+          </nav>
+        </aside>
+        <div className="aside-separator"></div>
+
+        <Outlet />
+      </div>
     </>
   );
 };

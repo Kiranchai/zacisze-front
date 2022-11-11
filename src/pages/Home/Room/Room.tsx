@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Slider from "../../components/Slider/Slider";
+import Slider from "../../../components/Slider/Slider";
 import "./Room.css";
 
 const Room = () => {
