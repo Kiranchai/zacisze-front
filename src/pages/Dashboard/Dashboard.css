@@ -1,5 +1,6 @@
 .dashboard-main{
     display: flex;
-    background-color: #F1F1F1;
-    
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2rem;
 }

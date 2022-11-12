@@ -1,6 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "./Aside.css";
 import { AiOutlineMenu } from "react-icons/ai";
+import {
+  MdSpaceDashboard,
+  MdMeetingRoom,
+  MdBookmark,
+  MdLocalPostOffice,
+} from "react-icons/md";
+import Option from "./Option/Option";
 import { useState } from "react";
 
 const Aside = () => {
@@ -28,37 +35,33 @@ const Aside = () => {
               Zalogowano jako Karol
             </header>
             <ul className="aside-option-list">
-              <NavLink
-                className="aside-navlink"
-                to="/dashboard/"
+              <Option
+                optionName="Panel główny"
+                optionIcon={<MdSpaceDashboard />}
+                routerPath="/"
                 onClick={showAside}
-              >
-                <li className="aside-option-link">Panel główny</li>
-              </NavLink>
+              />
 
-              <NavLink
-                className="aside-navlink"
-                to="/dashboard/rooms"
+              <Option
+                optionName="Pokoje"
+                optionIcon={<MdMeetingRoom />}
+                routerPath="/rooms"
                 onClick={showAside}
-              >
-                <li className="aside-option-link">Pokoje</li>
-              </NavLink>
+              />
 
-              <NavLink
-                className="aside-navlink"
-                to="/dashboard/reservations"
+              <Option
+                optionName="Rezerwacje"
+                optionIcon={<MdBookmark />}
+                routerPath="/reservations"
                 onClick={showAside}
-              >
-                <li className="aside-option-link">Rezerwacje</li>
-              </NavLink>
+              />
 
-              <NavLink
-                className="aside-navlink"
-                to="/dashboard/news"
+              <Option
+                optionName="Aktualności"
+                optionIcon={<MdLocalPostOffice />}
+                routerPath="/news"
                 onClick={showAside}
-              >
-                <li className="aside-option-link">Aktualności</li>
-              </NavLink>
+              />
             </ul>
           </nav>
         </aside>

@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import DashboardRoutes from "./DashboardRoutes";
-import LandingRouts from "./LandingRouts";
+import LandingRoutes from "./LandingRoutes";
 
 const AppRouter = () => {
   return (
     <>
       <Routes>
-        <Route path="/*" element={<LandingRouts />} />
+        <Route path="/*" element={<LandingRoutes />} />
         <Route path="/dashboard/*" element={<DashboardRoutes />} />
       </Routes>
     </>

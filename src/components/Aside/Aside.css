@@ -28,29 +28,6 @@
     list-style: none;
 }
 
-.aside-option-link{
-    padding: .5rem;
-    width: 100%;
-    height: 100%;
-}
-
-.aside-option-link:hover{
-    opacity: .8;
-    cursor: pointer;
-    background-color: #2b75c0;
-}
-
-.aside-navlink{
-    text-decoration: none;
-    color: #ffffff;
-    width: 100%;
-}
-
-.aside-navlink.active > .aside-option-link{
-    color: rgb(0, 159, 252);
-    text-shadow: 1px 1px black;
-}
-
 .aside-nav{
     height: var(--navbar-height);
     background-color: #1C4E80;
@@ -79,7 +56,6 @@
 .aside-nav-separator{
     display: none;
 }
-
 
 
 @media only screen and (max-width: 600px) {

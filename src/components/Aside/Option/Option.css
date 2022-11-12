@@ -1,0 +1,25 @@
+.aside-option-link{
+    padding: .5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.aside-option-link:hover{
+    opacity: .8;
+    cursor: pointer;
+    background-color: #2b75c0;
+}
+
+.aside-navlink{
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+}
+
+.aside-navlink.active > .aside-option-link{
+    color: rgb(0, 159, 252);
+    text-shadow: 1px 1px black;
+}

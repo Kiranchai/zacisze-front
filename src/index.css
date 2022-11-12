@@ -4,6 +4,7 @@
   --navbar-height: 3.5rem;
   --font-standard: 'Lato', sans-serif;
   --aside-width: 12rem;
+  --section-height: calc(100vh - (var(--navbar-height)));
 }
 
 *{
