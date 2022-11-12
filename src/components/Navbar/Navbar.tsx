@@ -27,6 +27,12 @@ const Navbar = () => {
 
         <ul className={iconIsActive ? "navbar-list showed" : "navbar-list"}>
           <li>
+            <NavLink className="navbar-link" to="/dashboard">
+              Panel
+            </NavLink>
+          </li>
+
+          <li>
             <NavLink className="navbar-link" to="/about">
               O nas
             </NavLink>
