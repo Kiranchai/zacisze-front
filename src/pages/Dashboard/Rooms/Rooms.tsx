@@ -1,6 +1,5 @@
-import React from "react";
+import DashListItem from "../../../components/DashListItem/DashListItem";
 import "./Rooms.css";
-import { AiFillEdit } from "react-icons/ai";
 
 const Rooms = () => {
   return (
@@ -9,18 +8,25 @@ const Rooms = () => {
 
       <section>
         <ul className="dashboard-rooms-list">
-          <li className="dashboard-rooms-list-item">
-            <div className="rooms-list-left">
-              <h3>Victoria</h3>
-              <span className="dashboard-rooms-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, perferendis.
-              </span>
-            </div>
-            <div className="room-list-right">
-              <AiFillEdit />
-            </div>
-          </li>
+          <DashListItem
+            roomName="Victoria"
+            roomDesc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+
+          <DashListItem
+            roomName="Bravo"
+            roomDesc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+
+          <DashListItem
+            roomName="Alfa"
+            roomDesc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+
+          <DashListItem
+            roomName="Beta"
+            roomDesc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
         </ul>
       </section>
     </main>

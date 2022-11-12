@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Rooms from "./pages/Dashboard/Rooms/Rooms";
 import News from "./pages/Dashboard/News/News";
 import Reservations from "./pages/Dashboard/Reservations/Reservations";
@@ -14,6 +14,7 @@ const DashboardRoutes = () => {
           <Route path="rooms" element={<Rooms />} />
           <Route path="reservations" element={<Reservations />} />
           <Route path="news" element={<News />} />
+          <Route path="*" element={<Navigate to="/dashboard" />} />
         </Route>
       </Routes>
     </>

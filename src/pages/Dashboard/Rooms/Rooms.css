@@ -10,36 +10,8 @@
 
 .dashboard-rooms-list{
     list-style: none;
-}
-
-.rooms-list-left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: .25rem;
+    gap: .75rem;
 }
 
-.dashboard-rooms-list-item{
-    background-color: rgb(211, 211, 211);
-    border-radius: .5rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    transition: all .2s ease-in-out;
-}
-
-.dashboard-rooms-list-item:hover{
-    background-color: rgb(221, 221, 221);
-}
-
-.room-list-right{
-    font-size: 1.5rem;
-    padding: 0 .5rem;
-    cursor: pointer;
-}
-
-.dashboard-rooms-description{
-    font-size: .85rem;
-}
