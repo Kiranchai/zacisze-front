@@ -15,6 +15,7 @@ const Login = () => {
               className="login-form-input"
               name="usernameInput"
               type="text"
+              autoFocus
             />
           </div>
 

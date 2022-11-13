@@ -1,0 +1,22 @@
+.add-new-button{
+    padding: .5rem .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    background-color: #7CFC00;
+    border: 1px solid 	#6b863b;
+    border-radius: .25rem;
+    max-width: 5rem;
+    color: black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.add-new-button:hover{
+    background-color: #c1ffae;
+}
+
+.add-new-button-span{
+    font-weight: 700;
+}

@@ -1,3 +1,4 @@
+import AddButton from "../../../components/AddButton/AddButton";
 import DashListItem from "../../../components/DashListItem/DashListItem";
 import "./Rooms.css";
 
@@ -6,6 +7,7 @@ const Rooms = () => {
     <main className="dashboard-rooms-main">
       <h1 className="dashboard-rooms-header">Pokoje</h1>
 
+      <AddButton />
       <section>
         <ul className="dashboard-rooms-list">
           <DashListItem
