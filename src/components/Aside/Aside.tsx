@@ -67,7 +67,9 @@ const Aside = () => {
         </aside>
         <div className="aside-separator"></div>
 
-        <Outlet />
+        <div className={asideShown ? "outlet blurred" : "outlet"}>
+          <Outlet />
+        </div>
       </div>
     </>
   );

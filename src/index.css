@@ -5,6 +5,7 @@
   --font-standard: 'Lato', sans-serif;
   --aside-width: 12rem;
   --section-height: calc(100vh - (var(--navbar-height)));
+  --section-width: calc(100vw - (var(var(--aside-width))));
 }
 
 *{
