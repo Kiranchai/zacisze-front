@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/zacisze-front/static/css/main.d8f1d82d.css",
-    "main.js": "/zacisze-front/static/js/main.0413e60a.js",
+    "main.css": "/zacisze-front/static/css/main.b90d3d00.css",
+    "main.js": "/zacisze-front/static/js/main.0deedb62.js",
     "index.html": "/zacisze-front/index.html",
-    "main.d8f1d82d.css.map": "/zacisze-front/static/css/main.d8f1d82d.css.map",
-    "main.0413e60a.js.map": "/zacisze-front/static/js/main.0413e60a.js.map"
+    "main.b90d3d00.css.map": "/zacisze-front/static/css/main.b90d3d00.css.map",
+    "main.0deedb62.js.map": "/zacisze-front/static/js/main.0deedb62.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8f1d82d.css",
-    "static/js/main.0413e60a.js"
+    "static/css/main.b90d3d00.css",
+    "static/js/main.0deedb62.js"
   ]
 }
