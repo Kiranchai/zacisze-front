@@ -6,6 +6,7 @@ import {
   MdMeetingRoom,
   MdBookmark,
   MdLocalPostOffice,
+  MdPerson,
 } from "react-icons/md";
 import Option from "./Option/Option";
 import { useState } from "react";
@@ -60,6 +61,13 @@ const Aside = () => {
                 optionName="Aktualności"
                 optionIcon={<MdLocalPostOffice />}
                 routerPath="/news"
+                onClick={showAside}
+              />
+
+              <Option
+                optionName="Konta"
+                optionIcon={<MdPerson />}
+                routerPath="/accounts"
                 onClick={showAside}
               />
             </ul>

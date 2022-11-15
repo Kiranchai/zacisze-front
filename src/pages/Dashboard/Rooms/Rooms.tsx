@@ -1,13 +1,23 @@
 import AddButton from "../../../components/AddButton/AddButton";
 import DashListItem from "../../../components/DashListItem/DashListItem";
+import EditRoomModal from "../../../components/EditRoomModal/EditRoomModal";
 import "./Rooms.css";
+import { useState } from "react";
 
 const Rooms = () => {
+  const [modalShown, setModalShown] = useState(false);
+
+  const displayModal = () => {
+    setModalShown((prevState) => !prevState);
+  };
+
   return (
     <main className="dashboard-rooms-main">
       <h1 className="dashboard-rooms-header">Pokoje</h1>
 
-      <AddButton />
+      <AddButton handleOnClick={displayModal} />
+
+      <EditRoomModal shown={modalShown} setShown={setModalShown} />
       <section>
         <ul className="dashboard-rooms-list">
           <DashListItem
